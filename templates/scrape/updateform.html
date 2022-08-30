@@ -1,0 +1,12 @@
+{% extends 'listings/base.html' %}
+
+{% block  body_block %}
+    <form class="form-horizontal"  method = "POST">
+      <div class="form-control form-control-lg">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type = "submit" class=" btn btn-primary" value="Continue" >
+      </div>  
+    </form>
+{% endblock  %}
+

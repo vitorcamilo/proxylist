@@ -1,0 +1,9 @@
+{% block  body_block %}
+<h1>Delete {{ip_detail.ipadress}}</h1>
+    <form  method = "POST">
+        {% csrf_token %}
+        <input type = "submit" class="btn btn-danger" value="Delete" > 
+        <a href="/">Cancel</a>
+    </form>
+{% endblock  %}
+

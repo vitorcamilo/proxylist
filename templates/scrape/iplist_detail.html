@@ -1,0 +1,50 @@
+{% block  body_block %}
+<div class = "jumbotron">
+    <h1>
+      Details:
+    </h1>
+    <p>
+      ID:
+      {{ ip_details.id }}
+    </p>
+    <p>
+      IP Adress:
+      {{ ip_details.ipadress }}
+    </p>
+    <p>
+      Port:
+      {{ ip_details.port }}
+    </p>
+    <p>
+      Protocol:
+      {{ ip_details.protocol }}
+    </p>
+    <p>
+      Country:
+      {{ ip_details.country }}
+    </p>
+    <p>
+      Region:
+      {{ ip_details.region }}
+    </p>
+    <p>
+      City:
+      {{ ip_details.city }}
+    </p>
+    <p>
+      Uptime:
+      {{ ip_details.uptime }}%
+    </p>
+    <p>
+      Response:
+      {{ ip_details.runtime }}%
+          </div>
+        </div>
+    </p>
+    
+    <p>
+      Transfer:
+        {{ ip_details.runtime }}%
+    </p>
+</div>
+{% endblock  %}
